@@ -21,10 +21,12 @@ function Counter() {
 
     return (
         <div className="Counter">
-            <p>Counter: {value}</p>
-            <button onClick={addOne}>Increase</button>
-            <button onClick={subtractOne}>Decrease</button>
-            <button onClick={reset}>Reset to 0</button>
+            <div className='main-div'>
+                <h1>Counter: {value}</h1>
+                <button onClick={addOne}>Increase</button>
+                <button onClick={subtractOne}>Decrease</button>
+                <button onClick={reset}>Reset to 0</button>
+            </div>
         </div>
     );
 }
